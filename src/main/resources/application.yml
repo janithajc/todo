@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: ADD_YOUR_
+            clientSecret: _CREDENTIALS
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo
+    username: todoapp
+    password: password
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: something
+            clientSecret: something
+  datasource:
+    url: jdbc:tc:postgresql:11.7-alpine:///
+    username: user
+    password: pass
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
